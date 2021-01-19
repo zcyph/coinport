@@ -11,9 +11,8 @@ while True:
     # define symbols
     symbols = {'BTC': 'bitcoin', 'ETH': 'ethereum', 'XMR': 'monero', 'ADA': 'cardano', 'XLM': 'stellar'}
 
-    # set CoinGecko API, retrieve prices, flatten the nested dict it returns
-    cg = CoinGeckoAPI()
-    getprices = cg.get_price(ids='bitcoin,ethereum,monero,cardano,stellar', vs_currencies='cad')
+    # retrieve prices from CoinGecko API, flatten with dictionary comprehension
+    getprices = CoinGeckoAPI().get_price(ids='bitcoin,ethereum,monero,cardano,stellar', vs_currencies='cad')
     prices = {k:getprices[v]['cad'] for (k,v) in symbols.items()}
 
     # get current holdings & book value from spreadsheet, convert nested OrderedDict to dictionary
@@ -29,12 +28,13 @@ while True:
     for i in symbols:
         print(f"| {i}: " + locale.currency(prices[i]), end=" |")
 
-    # display current holdings and value
+    # display portfolio book/market value and profit/loss in dollars
     print(f"\n\nPORTFOLIO:\n")
     print(f"BOOK VALUE: " + locale.currency(bookvalue))
     print(f"MARKET VALUE: " + locale.currency(total_holdings))
     print(f"NET P/L: " + locale.currency(total_holdings - bookvalue) + "\n")
 
+    # display individual holdings in cryptocurrency and dollars
     for i in symbols:
         print(f"{i}: {holdings[i]} ({locale.currency(holdings_value[i])})")
     time.sleep(10)
