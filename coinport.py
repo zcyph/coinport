@@ -37,4 +37,4 @@ while True:
     # display individual holdings in cryptocurrency and dollars
     for i in symbols:
         print(f"{i}: {holdings[i]} ({locale.currency(holdings_value[i])})")
-    time.sleep(10)
+    time.sleep(5)
