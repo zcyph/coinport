@@ -1,18 +1,27 @@
 import locale, time
 from pycoingecko import CoinGeckoAPI
 from pyexcel_ods import get_data
-from os import system
+from os import system, name
+
+
+def clear():
+    # for windows
+    if name == 'nt':
+        _ = system('cls')
+    # for mac and linux(here, os.name is 'posix')
+    else:
+        _ = system('clear')
 
 while True:
     # clear screen & set locale for currency formatting
-    system('clear')
+    clear()
     locale.setlocale(locale.LC_ALL, '')
 
     # define symbols
-    symbols = {'BTC': 'bitcoin', 'ETH': 'ethereum', 'XMR': 'monero', 'ADA': 'cardano', 'XLM': 'stellar'}
+    symbols = {'BTC': 'bitcoin', 'ETH': 'ethereum', 'XMR': 'monero', 'ADA': 'cardano', 'XLM': 'stellar', 'ZEC': 'zcash', 'LINK': 'chainlink', 'COMP': 'compound-governance-token', 'GLM': 'golem', 'SNX': 'havven', 'UNI': 'uniswap', 'NANO': 'nano', 'DOGE': 'dogecoin'}
 
     # retrieve prices from CoinGecko API, flatten with dictionary comprehension
-    getprices = CoinGeckoAPI().get_price(ids='bitcoin,ethereum,monero,cardano,stellar', vs_currencies='cad')
+    getprices = CoinGeckoAPI().get_price(ids='bitcoin,ethereum,monero,cardano,stellar,zcash,chainlink,compound-governance-token,golem,havven,uniswap,nano,dogecoin', vs_currencies='cad')
     prices = {k:getprices[v]['cad'] for (k,v) in symbols.items()}
 
     # get current holdings & book value from spreadsheet, convert nested OrderedDict to dictionary
