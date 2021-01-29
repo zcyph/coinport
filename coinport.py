@@ -3,7 +3,6 @@ from pycoingecko import CoinGeckoAPI
 from pyexcel_ods import get_data
 from os import system, name
 
-
 def clear():
     # for windows
     if name == 'nt':
