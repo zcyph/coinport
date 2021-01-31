@@ -11,7 +11,7 @@ This is a Python script, so make sure you have Python installed. This was tested
 
 **Dependencies**
 
-You'll need to install pycoingecko, pyexcel_ods and termcolor:
+It is recommended to do this within a virtual environment. You'll need to install pycoingecko, pyexcel_ods and termcolor:
 
 `pip install pycoingecko`
 
