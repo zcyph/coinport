@@ -25,4 +25,8 @@ You'll need to install pycoingecko, pyexcel_ods and termcolor:
 
 Make sure the spreadsheet is in the same folder as the script. 
 
+Run the script with: 
+
+`python coinport.py`
+
 ![](https://github.com/zcyph/coinport/blob/main/screenshot.png)
