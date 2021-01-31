@@ -1,9 +1,7 @@
 # coinport
-A minimalist cryptocurrency tracker.
+coinport is a minimalist cryptocurrency tracker written in Python, leveraging the CoinGecko API to show prices of your favorite cryptocurrencies.
 
-This small Python script uses the CoinGecko API to retrieve current price of specified cryptocurrency and display them.
-
-It retrieves information from a spreadsheet to display holdings, price, book value, market value and profit/loss of portfolio.
+It also retrieves information from a spreadsheet to display balance of your holdings, book value, market value and profit/loss.
 
 ## Requirements
 
