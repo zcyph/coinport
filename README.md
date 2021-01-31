@@ -7,11 +7,11 @@ It also retrieves information from a spreadsheet to display balance of your hold
 
 **Python**
 
-This is a Python script, so make sure you have Python installed. This was tested with Python 3.9.
+This is a Python script, so make sure you have Python installed. This was tested with Python 3.9 and works in Windows and Linux.
 
 **Dependencies**
 
-It is recommended to do this within a virtual environment. You'll need to install pycoingecko, pyexcel_ods and termcolor:
+A few things are required in order to run this script. After installing Python, do the following commands to install the dependencies. It is a good practice to do this within a virtual environment:
 
 `pip install pycoingecko`
 
@@ -21,9 +21,7 @@ It is recommended to do this within a virtual environment. You'll need to instal
 
 ## Usage
 
-Make sure the spreadsheet is in the same folder as the script. 
-
-Run the script with: 
+Make sure the spreadsheet is in the same folder as the script, run it like this: 
 
 `python coinport.py`
 
