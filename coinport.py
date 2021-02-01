@@ -25,9 +25,9 @@ while True:
     prices = {k:getprices[v]['cad'] for (k,v) in symbols.items()}
 
     # get current holdings & book value from spreadsheet, convert nested OrderedDict to dictionary
-    data = get_data("crypto.ods", start_row=2, row_limit=2, start_column=2)
+    data = get_data("crypto.ods", start_row=0, row_limit=2, start_column=2)
     holdings = dict(zip(data['Sheet1'][0], data['Sheet1'][1]))
-    bookvalue = (get_data("crypto.ods", start_row=3, row_limit=1, start_column=1, column_limit=1))['Sheet1'][0][0]
+    bookvalue = (get_data("crypto.ods", start_row=1, row_limit=1, start_column=1, column_limit=1))['Sheet1'][0][0]
 
     # current cryptocurrencies held, and total dollar amount
     holdings_value = {k:(holdings[k] * prices[k]) for k in holdings}
