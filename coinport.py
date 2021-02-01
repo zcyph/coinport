@@ -33,10 +33,6 @@ while True:
     holdings_value = {k:(holdings[k] * prices[k]) for k in holdings}
     total_holdings = sum(holdings_value.values())
 
-    # # display current prices for all held coins
-    # for i in symbols:
-    #     print(f"| {i}: " + locale.currency(prices[i]), end=" |")
-
     # display portfolio book/market value and profit/loss in dollars
     print(colored(f"P/L: ", "yellow", attrs=['bold']) + colored(locale.currency(total_holdings - bookvalue), "green") + colored("\nBOOK: ", "yellow", attrs=['bold']) + locale.currency(bookvalue) + colored("\nMARKET: ", "yellow", attrs=['bold']) + locale.currency(total_holdings) + "\n")
     print(colored("Symbol   Price       Balance              Value", "yellow", attrs=['bold']))
