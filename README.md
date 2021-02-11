@@ -37,7 +37,7 @@ Edit the included Excel spreadsheet to your liking and then run the script:
 
 `python coinport.py`
 
-The script will stay running unless you stop it (you can do that with CTRL-C). It will automatically refresh frequently to retrieve updated prices. If you save changes to the spreadsheet it will automatically update with your new additions.
+The script will stay running unless you stop it (you can do that with `CTRL-C`). It will automatically refresh frequently to retrieve updated prices. If you save changes to the spreadsheet it will automatically update with your new additions.
 
 
 ![](https://github.com/zcyph/coinport/blob/main/screenshot.png)
