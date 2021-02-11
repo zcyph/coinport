@@ -33,7 +33,7 @@ Change to the directory you just downloaded into, ie:
 
 `cd coinport`
 
-Edit the included Excel spreadsheet (ODS is supported if you prefer LibreOffice) to your liking and then run the script:
+Edit the included Excel spreadsheet to your liking (ODS is supported if you prefer LibreOffice), then run the script:
 
 `python coinport.py`
 
