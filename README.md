@@ -17,9 +17,11 @@ A few things are required in order to run this script. After installing Python, 
 
 `pip install pandas`
 
+`pip install xlrd`
+
 `pip install pyexcel_ods`
 
-`pip install termcolor`
+`pip install sty`
 
 Depending on your environment, you may or may not need to type "pip3" instead of just "pip".
 
