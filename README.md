@@ -13,7 +13,7 @@ This is a Python script, so make sure you have Python installed. This was tested
 
 **Dependencies**
 
-A few things are required in order to run this script. After installing Python, do the following commands to install the dependencies. Whilte not required, it is a good practice to do this within a virtual environment:
+A few things are required in order to run this script. After installing Python, install them as follows. While not required, it is a good practice to do this within a virtual environment:
 
 `pip install pycoingecko`
 
