@@ -29,6 +29,8 @@ Depending on your environment, you may or may not need to type "pip3" instead of
 
 ## Usage
 
+LibreOffice and MS Office formats are supported. By default, the script will look for the included file, `crypto.xlsx`. You can point it to your file of choice by editing `conf.json` accordingly. When adding or removing coins from your spreadsheet, be sure to use the cryptocurrency name (ie, "Bitcoin", "Bitcoin Cash", "Synthetix Network Token"). The ticker/symbol is not used here because there are many duplicates.
+
 Download ZIP above or just git clone the repo:
 
 `git clone https://github.com/zcyph/coinport`
@@ -37,7 +39,7 @@ Change to the directory you just downloaded into, ie:
 
 `cd coinport`
 
-Edit the included Excel spreadsheet to your liking (ODS is supported if you prefer LibreOffice), then run the script:
+Run the script:
 
 `python coinport.py`
 
