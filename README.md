@@ -3,7 +3,7 @@ A minimalist cryptocurrency & portfolio tracker written in Python.
 
 ## Why?
 
-The raison d'etre for this project is to track the coins I want, the coins I have, and see my overall progress - all without needing to create an account anywhere, provide sensitive personal information to any third parties, be tracked or profiled, or expose any cryptocurrency to risk of being compromised.
+The raison d'etre for this project is to track the coins I want, the coins I have, and see my overall progress - all without needing to create an account anywhere, provide sensitive personal information to any third party, be tracked or profiled, or expose any cryptocurrency.
 
 ## Requirements
 
