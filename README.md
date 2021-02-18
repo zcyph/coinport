@@ -19,6 +19,8 @@ A few things are required in order to run this script. After installing Python, 
 
 `pip install pandas`
 
+`pip install tabulate`
+
 `pip install xlrd`
 
 `pip install pyexcel_ods`
