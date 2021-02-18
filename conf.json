@@ -1,8 +1,8 @@
 {
     "spreadsheet": {
-        "filepath": "crypto.xlsx"
+        "filepath": "../coinport-test/crypto.ods"
     },
     "stats": {
-        "currency": "usd"
+        "currency": "cad"
     }
 }
