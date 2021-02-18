@@ -49,7 +49,7 @@ Run the script:
 
 `python coinport.py`
 
-The script will stay running unless you stop it (you can do that with `CTRL-C`). It will automatically refresh frequently to retrieve updated prices. If you save changes to the spreadsheet it will automatically update with your new additions.
+The script will stay running and automatically refresh prices and changes to the configuration. To stop the script, press `CTRL-C` or close the terminal window.
 
 
 ![](https://github.com/zcyph/coinport/blob/main/screenshot.png)
